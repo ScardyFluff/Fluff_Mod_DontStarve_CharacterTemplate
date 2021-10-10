@@ -1,0 +1,4 @@
+If you want to make sure the speech file is up to date; 
+copy and paste 'speech_wilson' from here:
+
+C:/Program Files/Steam/steamapps/common/dont_starve/data/scripts
