@@ -1,0 +1,1 @@
+The purpose of this folder is to provide a convenient way of removing parts. Replace a part with one of these to get rid of it.

@@ -1,10 +1,9 @@
 local MakePlayerCharacter = require "prefabs/player_common"
 
 local assets = {
-
 	Asset("SCRIPT", "scripts/prefabs/player_common.lua")
-
 }
+
 local prefabs = 
 {
 --	"example_item",
@@ -13,7 +12,11 @@ local prefabs =
 -- Custom starting items
 local start_inv = 
 {
---	"example_item",
+	"flint",
+	"flint",
+	"twigs",
+	"twigs"
+--	"example_item"
 }
 
 local fn = function(inst)

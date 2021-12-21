@@ -1,3 +1,6 @@
+
+-- Sample, The Singleplayer Template -- modmain.lua
+
 PrefabFiles = {
 	"templatechar",
 }
@@ -21,25 +24,20 @@ Assets = {
 	Asset( "ATLAS", "images/map_icons/templatechar.xml" ),
 
 -- Character Voice
-	Asset("SOUNDPACKAGE", "sound/templatechar.fev"),
-    Asset("SOUND", "sound/templatechar.fsb"),
-	
-  	--Asset( "IMAGE", "images/names_templatechar.tex" ),
-    --Asset( "ATLAS", "images/names_templatechar.xml" ),
-	
-	--Asset( "IMAGE", "images/names_gold_templatechar.tex" ),
-    --Asset( "ATLAS", "images/names_gold_templatechar.xml" ),
+--	Asset("SOUNDPACKAGE", "sound/templatechar.fev"),
+--	Asset("SOUND", "sound/templatechar.fsb"),
 
-    --Asset("ATLAS", "images/inventoryimages/templatechar_hat.xml"),
-    --Asset("IMAGE", "images/inventoryimages/templatechar_hat.tex"),
+-- Item Icons
+--	Asset("ATLAS", "images/inventoryimages/templatechar_hat.xml"),
+--	Asset("IMAGE", "images/inventoryimages/templatechar_hat.tex"),
 }
 
 -- Voice Patching
-RemapSoundEvent( "dontstarve/characters/templatechar/death_voice", "templatechar/characters/templatechar/death_voice" )
-RemapSoundEvent( "dontstarve/characters/templatechar/hurt", "templatechar/characters/templatechar/hurt" )
-RemapSoundEvent( "dontstarve/characters/templatechar/talk_LP", "templatechar/characters/templatechar/talk_LP" )
+--	RemapSoundEvent( "dontstarve/characters/templatechar/death_voice", "templatechar/characters/templatechar/death_voice" )
+--	RemapSoundEvent( "dontstarve/characters/templatechar/hurt", "templatechar/characters/templatechar/hurt" )
+--	RemapSoundEvent( "dontstarve/characters/templatechar/talk_LP", "templatechar/characters/templatechar/talk_LP" )
 
-GLOBAL.templatechar_voice = GetModConfigData("templatechar_voice")
+--	GLOBAL.templatechar_voice = GetModConfigData("templatechar_voice")
 
 --G = GLOBAL
 --T = G.TUNING
@@ -48,9 +46,9 @@ GLOBAL.templatechar_voice = GetModConfigData("templatechar_voice")
 --AddRecipe = G.Recipe
 --Ingredient = G.Ingredient
 
---G.STRINGS.NAMES.TEMPLATECHAR_HAT = "Trophy Cap"
---G.STRINGS.RECIPE_DESC.TEMPLATECHAR_HAT = "A replica of Sue Shi's hat."
---G.STRINGS.CHARACTERS.GENERIC.DESCRIBE.TEMPLATECHAR_HAT = "It's Sue-Shi's cap."
+--G.STRINGS.NAMES.TEMPLATECHAR_HAT = "Test Hat"
+--G.STRINGS.RECIPE_DESC.TEMPLATECHAR_HAT = "Crafting description."
+--G.STRINGS.CHARACTERS.GENERIC.DESCRIBE.TEMPLATECHAR_HAT = "It's a hat for testing."
 
 AddMinimapAtlas("images/map_icons/templatechar.xml")
 
@@ -62,16 +60,16 @@ local _G = GLOBAL
 	STRINGS.CHARACTER_TITLES.templatechar = "The Singleplayer Template"
 	STRINGS.CHARACTER_NAMES.templatechar = "Sample"
 	STRINGS.CHARACTER_DESCRIPTIONS.templatechar = "*Perk 1\n*Perk 2\n*Perk 3"
-	STRINGS.CHARACTER_QUOTES.templatechar = "\"Quote\""
+	STRINGS.CHARACTER_QUOTES.templatechar = "\"Quote.\""
 
--- Custom speech strings
+-- Custom Speech
 	STRINGS.CHARACTERS.TEMPLATECHAR = require "speech_templatechar"
 
--- The character's name as appears in-game 
+-- In-Game Name
 	STRINGS.NAMES.TEMPLATECHAR = "Sample"
 
--- Add mod character to mod character list and also specify a gender.
--- Possible genders are: MALE(he/his), FEMALE(she/her) and ROBOT(they/them).
+-- Add character to game and assign pronouns.
+-- Possible pronouns are: MALE(he/his), FEMALE(she/her) and ROBOT(they/them)??.
 table.insert(GLOBAL.CHARACTER_GENDERS.ROBOT, "templatechar")
 
-AddModCharacter("templatechar")
+-- AddModCharacter("templatechar")
