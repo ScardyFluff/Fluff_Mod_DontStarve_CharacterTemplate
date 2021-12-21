@@ -1,5 +1,5 @@
 
--- Sample, The Singleplayer Template -- modmain.lua
+-- Sample, The Singleplayer Template - modmain.lua
 
 PrefabFiles = {
 	"templatechar",
