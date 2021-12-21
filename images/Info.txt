@@ -1,0 +1,5 @@
+
+The contents of this folder are converted by the autocompiler.
+
+If you wish to do this manually using TEXTool instead, don't use the
+PNGs provided, and export a new PNG from the TEX files first.

@@ -3,8 +3,8 @@
 
 -- Basic Info
 	name = "Singleplayer Character Template"
-	description = "A character template for Don't Starve +DLCs"
-	author = "ScardyFluff"
+	description = "An updated character template for Don't Starve +DLCs"
+	author = "ScardyFluff, DragonWolfLeo"
 	version = "1.0.0"
 	forumthread = ""
 

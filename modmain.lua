@@ -39,12 +39,12 @@ Assets = {
 
 --	GLOBAL.templatechar_voice = GetModConfigData("templatechar_voice")
 
---G = GLOBAL
---T = G.TUNING
---RECIPETABS = G.RECIPETABS
---TECH = G.TECH
---AddRecipe = G.Recipe
---Ingredient = G.Ingredient
+G = GLOBAL
+T = G.TUNING
+RECIPETABS = G.RECIPETABS
+TECH = G.TECH
+AddRecipe = G.Recipe
+Ingredient = G.Ingredient
 
 --G.STRINGS.NAMES.TEMPLATECHAR_HAT = "Test Hat"
 --G.STRINGS.RECIPE_DESC.TEMPLATECHAR_HAT = "Crafting description."
@@ -69,7 +69,7 @@ local _G = GLOBAL
 	STRINGS.NAMES.TEMPLATECHAR = "Sample"
 
 -- Add character to game and assign pronouns.
--- Possible pronouns are: MALE(he/his), FEMALE(she/her) and ROBOT(they/them)??.
+-- Possible pronouns are: MALE(he/his), FEMALE(she/her) and ROBOT(they/them)...Possibly more?.
 table.insert(GLOBAL.CHARACTER_GENDERS.ROBOT, "templatechar")
 
--- AddModCharacter("templatechar")
+AddModCharacter("templatechar")
