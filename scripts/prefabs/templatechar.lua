@@ -1,16 +1,24 @@
+
+-- Sample, The Singleplayer Template - templatechar.lua
+
+-- References the player_common anim for all animations. This is alraedy in the game!
 local MakePlayerCharacter = require "prefabs/player_common"
 
+-- Use the assets you've included in your anim folder.
 local assets = {
 	Asset("ANIM", "anim/templatechar.zip"),
-	Asset("SCRIPT", "scripts/prefabs/player_common.lua")
+--	Asset("SCRIPT", "scripts/prefabs/player_common.lua")
 }
 
+-- Load non-character stuff. Like an item or pet.
 local prefabs = 
 {
 --	"example_item",
 }
 
 -- Starting Items
+-- What will appear in templatechar's inventory when starting a game.
+-- NOTE: The items can stack, so you'll have 3 Flint and 3 Twigs in 2 inventory slots.
 local start_inv = 
 {
 	"flint",
@@ -22,6 +30,7 @@ local start_inv =
 --	"example_item"
 }
 
+-- Here's where you set up the stuff that will happen while you play.
 local fn = function(inst)
 -- Character Voice
 	inst.soundsname = "wilson"

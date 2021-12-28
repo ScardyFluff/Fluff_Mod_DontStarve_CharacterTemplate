@@ -1,4 +1,0 @@
-
-The purpose of this folder is to provide an easy way of removing parts.
-
-Copy and paste the folders you want to replace in the character's folder.
