@@ -2,6 +2,7 @@
 A character template for Don't Starve +DLCs.
 
 TO-DO:
+
 	* Add more comments. (??%)
 	* Include voice files. (??%)
 	* Make an updated tutorial for this template and how to add more stuff. (??%)
