@@ -31,8 +31,8 @@ Assets = {
 
 -- Character Voice
 -- If you want a custom voice, make sure to edit the file in the sound folder.
---	Asset("SOUNDPACKAGE", "sound/templatechar.fev"),
---	Asset("SOUND", "sound/templatechar.fsb"),
+	Asset("SOUNDPACKAGE", "sound/templatechar.fev"),
+    Asset("SOUND", "sound/templatechar.fsb"),
 
 -- Item Icons
 --	Asset("ATLAS", "images/inventoryimages/templatechar_hat.xml"),
@@ -41,13 +41,13 @@ Assets = {
 
 -- Voice Patching
 -- I'm not sure if this is needed... or complete.
---	RemapSoundEvent( "dontstarve/characters/templatechar/death_voice", "templatechar/characters/templatechar/death_voice" )
---	RemapSoundEvent( "dontstarve/characters/templatechar/hurt", "templatechar/characters/templatechar/hurt" )
 --	RemapSoundEvent( "dontstarve/characters/templatechar/talk_LP", "templatechar/characters/templatechar/talk_LP" )
+--	RemapSoundEvent( "dontstarve/characters/templatechar/hurt", "templatechar/characters/templatechar/hurt" )
+--	RemapSoundEvent( "dontstarve/characters/templatechar/death_voice", "templatechar/characters/templatechar/death_voice" )
 
 --	GLOBAL.templatechar_voice = GetModConfigData("templatechar_voice")
 
--- These... i have to expariment with them.
+-- These... I have to experiment with them.
 G = GLOBAL
 T = G.TUNING
 RECIPETABS = G.RECIPETABS
@@ -68,19 +68,22 @@ local _G = GLOBAL
 
 -- Character Info
 -- These strings are what are shown in in the character select screen.
+-- Note: STRINGS.CHARACTER_NAMES.templatechar only appears once you beat the game.
 	STRINGS.CHARACTER_TITLES.templatechar = "The Singleplayer Template"
 	STRINGS.CHARACTER_NAMES.templatechar = "Sample"
 	STRINGS.CHARACTER_DESCRIPTIONS.templatechar = "*Perk 1\n*Perk 2\n*Perk 3"
 	STRINGS.CHARACTER_QUOTES.templatechar = "\"Quote.\""
 
 -- Custom Speech
+-- Here is EVERYTHING your character will say in the game.
 	STRINGS.CHARACTERS.TEMPLATECHAR = require "speech_templatechar"
 
 -- In-Game Name
+-- This is just the first name of your character, I guess.
 	STRINGS.NAMES.TEMPLATECHAR = "Sample"
 
 -- Add character to game and assign pronouns.
--- Possible pronouns are: MALE(he/his), FEMALE(she/her) and ROBOT(they/them)...Possibly more?
+-- Possible pronouns are: MALE(he/his), FEMALE(she/her) and ROBOT(they/their).
 table.insert(GLOBAL.CHARACTER_GENDERS.ROBOT, "templatechar")
 
 AddModCharacter("templatechar")

@@ -1,7 +1,7 @@
 
 -- Sample, The Singleplayer Template - templatechar.lua
 
--- References the player_common anim for all animations. This is alraedy in the game!
+-- References the player_common anim for all animations. This is already in the game!
 local MakePlayerCharacter = require "prefabs/player_common"
 
 -- Use the assets you've included in your anim folder.
@@ -26,13 +26,16 @@ local start_inv =
 	"flint",
 	"twigs",
 	"twigs",
-	"twigs"
+	"twigs",
+	"gogglesnormalhat",
+	"gasmaskhat"
 --	"example_item"
 }
 
 -- Here's where you set up the stuff that will happen while you play.
 local fn = function(inst)
 -- Character Voice
+--todo: check dlc voices
 	inst.soundsname = "wilson"
 
 -- Minimap icon
@@ -40,17 +43,17 @@ local fn = function(inst)
 	minimap:SetIcon( "templatechar.tex" )
 
 -- Health Stats
-	inst.components.health:SetMaxHealth(150) --Base Health
-    inst.components.health.absorb = 0.10 --The percentage of damage that will be nullified from the inflicted damage.
+	inst.components.health:SetMaxHealth(150) -- Base Health (Constant)
+    inst.components.health.absorb = 0.10 -- The percentage of damage that will be nullified from the inflicted damage. (Percentage)
 
 -- Hunger Stats
-    inst.components.hunger:SetMax(150) --Base Hunger
---	inst.components.hunger:SetRate = 1 * TUNING.WILSON_HUNGER_RATE
+    inst.components.hunger:SetMax(150) -- Base Hunger (Constant)
+	inst.components.hunger:SetRate = 1 * TUNING.WILSON_HUNGER_RATE -- How quick will your character get hungry. (Multiplier)
 --	inst.components.hunger:SetKillRate(TUNING.WILSON_HEALTH/TUNING.STARVE_KILL_TIME)
---	inst.components.hunger.hungerrate = 1 * TUNING.WILSON_HUNGER_RATE --How quick will your character get hungry.
+--	inst.components.hunger.hungerrate = 1 * TUNING.WILSON_HUNGER_RATE
 
 -- Sanity Stats
-	inst.components.sanity:SetMax(200) --Base Sanity
+	inst.components.sanity:SetMax(200) --Base Sanity (Constant)
 	inst.components.sanity.night_drain_mult = 1 --Sanity drain at night and dusk.
 --	inst.components.sanity.dapperness = TUNING.DAPPERNESS_SMALL --Constant sanity increase.
 	
