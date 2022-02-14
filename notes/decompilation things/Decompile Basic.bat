@@ -1,1 +1,0 @@
-krane anim.bin build.bin output

@@ -1,1 +1,0 @@
-krane DS_anim.bin build.bin output
