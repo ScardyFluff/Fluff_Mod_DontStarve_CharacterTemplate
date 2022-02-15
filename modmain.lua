@@ -31,8 +31,8 @@ Assets = {
 
 -- Character Voice
 -- If you want a custom voice, make sure to edit the file in the sound folder.
-	Asset("SOUNDPACKAGE", "sound/templatechar.fev"),
-    Asset("SOUND", "sound/templatechar.fsb"),
+--	Asset("SOUNDPACKAGE", "sound/templatechar.fev"),
+--	Asset("SOUND", "sound/templatechar.fsb"),
 
 -- Item Icons
 --	Asset("ATLAS", "images/inventoryimages/templatechar_hat.xml"),
