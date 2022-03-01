@@ -11,7 +11,7 @@
 	forumthread = ""
 
 -- Current Version
--- Don't Starve, including the DLCs use 6 here. But Don't Starve Together uses 10. Keep it in mind!
+-- Don't Starve, including the DLCs, use 6 here. But Don't Starve Together uses 10. Keep it in mind!
 	api_version = 6
 
 -- General Compatibility

@@ -46,7 +46,7 @@ local fn = function(inst)
 	minimap:SetIcon( "templatechar.tex" )
 
 -- Health Stats ---------------------------------------------------------------------------------
-	inst.components.health:SetMaxHealth(150) -- Base Health (Constant)
+	inst.components.health:SetMaxHealth(150) -- Base Health. (Constant)
     inst.components.health.absorb = 0.10 -- The percentage of damage that will be nullified from the inflicted damage. (Percentage)
 
 --	NOTES:
