@@ -1,12 +1,12 @@
 
 -- Sample, The Singleplayer Template - modmain.lua
 
--- Make sure to add all the zips inside the anim folder.(?)
+-- Make sure to add all the ZIP's names from inside the anim folder.(?)
 PrefabFiles = {
 	"templatechar",
 }
 
--- These are the files that aren't part of the zips.
+-- These are the files that aren't part of the ZIPs.
 Assets = {
 -- Character Portrait
 -- This is the big image that appears on the left when you select a character.
