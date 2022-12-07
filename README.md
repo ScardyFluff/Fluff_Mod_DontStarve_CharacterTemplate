@@ -18,4 +18,3 @@ Credits:
 	* simplex - Made KTools.
 	* Ultroman - For ACTUALLY helping in the forums, and providing good references.
 	* K1NGT1GER609 - Sound Reference.
-	* https://www.symbolab.com/ - Did the math for me. (I suck at math.)
