@@ -26,7 +26,7 @@
 
 -- Mod Menu Icon
 -- Don't touch this.
--- NOTE: You can compile the modicon by making placing a folder in Mods with an "images" folder inside, and placing the modicon PNG inside that folder.
+-- NOTE: You can compile the modicon by placing a folder in Mods with an "images" folder inside, and placing the modicon PNG inside that folder.
 	icon_atlas = "modicon.xml"
 	icon = "modicon.tex"
 
