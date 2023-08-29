@@ -5,8 +5,8 @@
 -- Add all the info you want!
 -- NOTE: you can use \n to make a paragraph break in the description!
 	name = "Singleplayer Character Template"
-	description = "An updated character template for Don't Starve +DLCs"
-	author = "ScardyFluff, DragonWolfLeo"
+	description = "An updated character template for Don't Starve +DLCs."
+	author = "DragonWolfLeo, ScardyFluff"
 	version = "1.0.0"
 	forumthread = ""
 
