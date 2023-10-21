@@ -17,6 +17,7 @@ Assets = {
 -- This is the image that appears when loading a savefile...
 	Asset( "IMAGE", "images/saveslot_portraits/templatechar.tex" ),
 	Asset( "ATLAS", "images/saveslot_portraits/templatechar.xml" ),
+
 -- ...and these are for the character select screen!
 -- NOTE: The templatechar_silho image is basically unused for your custom character.
 	Asset( "IMAGE", "images/selectscreen_portraits/templatechar.tex" ),
