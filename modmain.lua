@@ -22,6 +22,7 @@ Assets = {
 -- NOTE: The templatechar_silho image is basically unused for your custom character.
 	Asset( "IMAGE", "images/selectscreen_portraits/templatechar.tex" ),
 	Asset( "ATLAS", "images/selectscreen_portraits/templatechar.xml" ),
+
 	Asset( "IMAGE", "images/selectscreen_portraits/templatechar_silho.tex" ),
 	Asset( "ATLAS", "images/selectscreen_portraits/templatechar_silho.xml" ),
 
@@ -48,7 +49,8 @@ Assets = {
 
 --	GLOBAL.templatechar_voice = GetModConfigData("templatechar_voice")
 
--- These... I have to experiment with them.
+-- These are for shortening the names used when refering to stuff in code.
+-- Don't touch unless you know what you're doing!
 G = GLOBAL
 T = G.TUNING
 RECIPETABS = G.RECIPETABS
