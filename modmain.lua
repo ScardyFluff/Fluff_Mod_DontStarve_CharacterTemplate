@@ -41,52 +41,54 @@ Assets = {
 --	Asset("IMAGE", "images/inventoryimages/templatechar_hat.tex"),
 }
 
+-- These are for shortening the names used when refering to stuff in code.
+-- Don't touch unless you know what you're doing!
+G = GLOBAL
+TU = G.TUNING
+RQ = G.require
+ST = G.STRINGS
+RT = G.RECIPETABS
+TH = G.TECH
+RE = G.Recipe
+IN = G.Ingredient
+
 -- Voice Patching
 -- I'm not sure if this is needed... or complete.
 --	RemapSoundEvent( "dontstarve/characters/templatechar/talk_LP", "templatechar/characters/templatechar/talk_LP" )
 --	RemapSoundEvent( "dontstarve/characters/templatechar/hurt", "templatechar/characters/templatechar/hurt" )
 --	RemapSoundEvent( "dontstarve/characters/templatechar/death_voice", "templatechar/characters/templatechar/death_voice" )
 
---	GLOBAL.templatechar_voice = GetModConfigData("templatechar_voice")
+--	G.templatechar_voice = GetModConfigData("templatechar_voice")
 
--- These are for shortening the names used when refering to stuff in code.
--- Don't touch unless you know what you're doing!
-G = GLOBAL
-T = G.TUNING
-RECIPETABS = G.RECIPETABS
-TECH = G.TECH
-AddRecipe = G.Recipe
-Ingredient = G.Ingredient
-
---G.STRINGS.NAMES.TEMPLATECHAR_HAT = "Test Hat"
---G.STRINGS.RECIPE_DESC.TEMPLATECHAR_HAT = "Crafting description."
---G.STRINGS.CHARACTERS.GENERIC.DESCRIBE.TEMPLATECHAR_HAT = "It's a hat for testing."
+--ST.NAMES.TEMPLATECHAR_HAT = "Test Hat"
+--ST.RECIPE_DESC.TEMPLATECHAR_HAT = "Crafting description."
+--ST.CHARACTERS.GENERIC.DESCRIBE.TEMPLATECHAR_HAT = "It's a hat for testing."
 
 -- Adds the map icon to the proper place.
 AddMinimapAtlas("images/map_icons/templatechar.xml")
 
-local require = GLOBAL.require
-local STRINGS = GLOBAL.STRINGS
-local _G = GLOBAL
+--local require = GLOBAL.require
+--local STRINGS = GLOBAL.STRINGS
+--local _G = GLOBAL
 
 -- Character Info
 -- These strings are what are shown in in the character select screen.
 -- Note: STRINGS.CHARACTER_NAMES.templatechar only appears once you beat the game.
-	STRINGS.CHARACTER_TITLES.templatechar = "The Singleplayer Template"
-	STRINGS.CHARACTER_NAMES.templatechar = "Sample"
-	STRINGS.CHARACTER_DESCRIPTIONS.templatechar = "*Perk 1\n*Perk 2\n*Perk 3"
-	STRINGS.CHARACTER_QUOTES.templatechar = "\"Quote.\""
+	ST.CHARACTER_TITLES.templatechar = "The Singleplayer Template"
+	ST.CHARACTER_NAMES.templatechar = "Sample"
+	ST.CHARACTER_DESCRIPTIONS.templatechar = "*Perk 1\n*Perk 2\n*Perk 3"
+	ST.CHARACTER_QUOTES.templatechar = "\"Quote.\""
 
 -- Custom Speech
 -- Here is EVERYTHING your character will say in the game.
-	STRINGS.CHARACTERS.TEMPLATECHAR = require "speech_templatechar"
+	ST.CHARACTERS.TEMPLATECHAR = RQ "speech_templatechar"
 
 -- In-Game Name
 -- This is just the first name of your character, I guess.
-	STRINGS.NAMES.TEMPLATECHAR = "Sample"
+	ST.NAMES.TEMPLATECHAR = "Sample"
 
 -- Add character to game and assign pronouns.
 -- Possible pronouns are: MALE(he/his), FEMALE(she/her) and ROBOT(they/their).
-table.insert(GLOBAL.CHARACTER_GENDERS.ROBOT, "templatechar")
+table.insert(G.CHARACTER_GENDERS.ROBOT, "templatechar")
 
 AddModCharacter("templatechar")
