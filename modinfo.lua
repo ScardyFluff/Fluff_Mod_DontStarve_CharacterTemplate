@@ -21,7 +21,7 @@
 	shipwrecked_compatible = true
 	hamlet_compatible = true
 
--- Keep this "false" unless you want to make the mod compatible with Don't Starve Together.
+-- Keep this "false" unless you plan to make the mod compatible with Don't Starve Together.
 	dst_compatible = false
 
 -- Mod Menu Icon
