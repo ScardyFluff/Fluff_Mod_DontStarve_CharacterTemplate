@@ -54,7 +54,7 @@ local fn = function(inst)
 --	absorb = ?????
 
 -- Hunger Stats ---------------------------------------------------------------------------------
-	inst.components.hunger:SetMax(5)
+	inst.components.hunger:SetMax(150)
 	inst.components.hunger.SetRate = 1 * TUNING.WILSON_HUNGER_RATE
 	inst.components.hunger.SetKillRate = 1 * TUNING.WILSON_HEALTH/TUNING.STARVE_KILL_TIME
 

@@ -1,3 +1,1 @@
 Placeholder so github adds this folder.
-
-Remove before releasing your mod!

@@ -1,3 +1,5 @@
-# anim folder
-
-# 
+# root folder
+*.tex
+*.xml
+*.zip
+*.txt
