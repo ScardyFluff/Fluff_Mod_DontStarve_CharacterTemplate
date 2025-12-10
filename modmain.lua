@@ -42,7 +42,7 @@ Assets = {
 }
 
 -- These are for shortening the names used when refering to stuff in code.
--- Don't touch unless you know what you're doing!
+-- Don't touch unless you know what you're doing! (Which i dont, but i digress...)
 G = GLOBAL
 TU = G.TUNING
 RQ = G.require
